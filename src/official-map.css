@@ -1,0 +1,6 @@
+.official-map-art{background:#edf0e6;position:relative;border-radius:12px;overflow:hidden}
+.official-map-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.official-map-tint{position:absolute;inset:0;background:linear-gradient(180deg,#ffffff10,#4669500d);pointer-events:none}
+.official-route-line{position:absolute;left:16%;top:73%;width:68%;height:2px;background:var(--orange);opacity:.75;transform:rotate(-18deg);transform-origin:left center;box-shadow:0 0 0 3px #ffffff66}
+.official-map-art .map-point{box-shadow:0 1px 3px #243c2a55}
+.official-map-art .map-point.active{box-shadow:0 0 0 5px #d8804650,0 2px 5px #243c2a55}

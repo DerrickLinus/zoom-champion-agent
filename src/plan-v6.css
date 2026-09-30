@@ -1,0 +1,42 @@
+.interactive-plan{padding:24px 20px 38px;background:#eef1e6;min-height:calc(100vh - 66px);box-sizing:border-box}
+.interactive-plan .form-head{padding:4px 2px 0}
+.interactive-plan .form-head h1{font-family:'Noto Serif SC',serif;font-size:30px;line-height:1.35;margin:24px 0 8px;color:var(--deep)}
+.interactive-plan .form-head p:last-child{font-size:13px;color:#7d8d80;margin:0}
+.need-summary{background:#dce9da;border-radius:15px;padding:14px;margin:22px 0 15px;box-shadow:0 5px 15px #36543608}
+.summary-head{display:flex;align-items:center;gap:7px;color:var(--green);font-size:13px}
+.summary-head span{margin-left:auto;color:#779078;font-size:10px}
+.summary-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:24px}
+.summary-tags span{display:flex;align-items:center;gap:4px;background:#fffdf5;color:#59725d;border-radius:7px;padding:6px 8px;font-size:10px}
+.summary-tags button{border:0;background:none;color:#8a9a8b;padding:0;display:flex;cursor:pointer}
+.summary-tags small{color:#809181;font-size:11px;padding:5px}
+.need-progress{display:flex;gap:4px;overflow:auto;padding:2px 0 16px;scrollbar-width:none}
+.need-progress button{border:0;background:none;white-space:nowrap;color:#8a998c;font:inherit;font-size:10px;padding:3px 4px;cursor:pointer}
+.need-progress button.active{color:var(--green);font-weight:800}
+.need-progress i{width:23px;height:23px;border-radius:50%;background:#e1e7dc;display:inline-grid;place-items:center;margin-right:4px;font-style:normal;font-size:11px}
+.need-progress .active i{background:var(--green);color:#fff}
+.choice-panel{background:#fffdf5;border-radius:16px;padding:17px;box-shadow:0 8px 22px #3654360d;margin-bottom:13px}
+.choice-title{display:flex;justify-content:space-between;align-items:start}
+.choice-title h2{font-family:'Noto Serif SC',serif;font-size:22px;margin:0 0 6px;color:var(--deep)}
+.choice-title p{font-size:11px;color:#869487;margin:0;line-height:1.5}
+.choice-title .text-btn{margin:0;font-size:11px;color:#7c8f7d}
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:17px}
+.choice-grid button{border:1px solid #e1e5d9;background:#f6f5e9;color:#637563;border-radius:10px;min-height:49px;padding:10px 9px;text-align:left;font:inherit;font-size:12px;display:flex;align-items:center;gap:7px;cursor:pointer}
+.choice-grid button span{width:22px;height:22px;flex:none;border-radius:50%;background:#e8ede2;display:grid;place-items:center;color:#7e977f}
+.choice-grid button.selected{border-color:var(--green);background:#dcebdd;color:var(--green);font-weight:700}
+.choice-grid button.selected span{background:var(--green);color:#fff}
+.choice-actions{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+.skip-choice{border:0;background:none;color:#9aa398;font:inherit;font-size:11px;padding:8px 0;cursor:pointer}
+.next-choice{border:0;background:#e0ecdf;color:var(--green);border-radius:9px;padding:10px 12px;font:inherit;font-size:11px;font-weight:700;display:flex;align-items:center;gap:4px;cursor:pointer}
+.extra-box{background:#fffdf5;border-radius:14px;padding:14px;box-shadow:0 8px 22px #3654360d;position:relative}
+.extra-box>div{display:flex;align-items:center;gap:7px;color:var(--green)}
+.extra-box>div b{font-size:13px;white-space:nowrap}
+.extra-box>div small{color:#909d91;font-size:10px;margin-left:auto;white-space:nowrap}
+.voice-input-btn{width:29px;height:29px;border:0;border-radius:50%;background:#e3eee3;color:var(--green);display:grid;place-items:center;padding:0;cursor:pointer}
+.voice-input-btn.recording{background:#d77d52;color:#fff;animation:voice-pulse 1.2s infinite}
+.extra-box textarea{display:block;width:100%;box-sizing:border-box;border:0;border-bottom:1px solid #e5e5d9;background:none;resize:none;height:58px;padding:12px 0 5px;font:inherit;font-size:12px;line-height:1.5;outline:none;color:var(--deep)}
+.extra-box>span{display:block;text-align:right;color:#a0aa9f;font-size:10px;margin-top:5px}
+.interactive-plan>.primary{margin-top:17px;width:100%;border:0;font:inherit;cursor:pointer}
+.interactive-plan>.primary:disabled{opacity:.65;cursor:wait}
+.interactive-plan .api-status{display:flex;align-items:center;gap:7px;background:#e0ebdf;color:#5d795f;border-radius:9px;padding:10px 12px;font-size:11px;margin-top:12px}
+.interactive-plan .privacy{line-height:1.6;text-align:center;color:#95a194;font-size:10px;margin:15px 8px 0}
+@keyframes voice-pulse{0%,100%{box-shadow:0 0 0 0 #d77d5266}50%{box-shadow:0 0 0 7px #d77d5200}}
