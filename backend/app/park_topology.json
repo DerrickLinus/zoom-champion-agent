@@ -1,0 +1,41 @@
+{
+  "source": "红山动物园官方折页中文版导览图，v1人工标注",
+  "nodes": {
+    "north_gate": {"name":"北门入口","kind":"gate","x":18,"y":17},
+    "north_junction": {"name":"北坡主路交叉点","kind":"junction","x":30,"y":25},
+    "panda": {"name":"金陵大熊猫苑","kind":"poi","x":42,"y":29},
+    "west_junction": {"name":"小红山西侧交叉点","kind":"junction","x":22,"y":42},
+    "native": {"name":"本土物种保育区","kind":"poi","x":45,"y":39},
+    "central_junction": {"name":"大红山中心交叉点","kind":"junction","x":58,"y":42},
+    "rest": {"name":"林间休息区","kind":"poi","x":46,"y":53},
+    "primate": {"name":"亚洲灵长馆","kind":"poi","x":73,"y":45},
+    "east_junction": {"name":"东侧主路交叉点","kind":"junction","x":83,"y":35},
+    "east_gate": {"name":"东门出口","kind":"gate","x":91,"y":31},
+    "food": {"name":"林下餐饮点","kind":"poi","x":57,"y":60},
+    "south_junction": {"name":"南侧服务区交叉点","kind":"junction","x":50,"y":72},
+    "africa": {"name":"非洲之歌","kind":"poi","x":76,"y":66},
+    "south_gate": {"name":"南门出口","kind":"gate","x":38,"y":78}
+  },
+  "edges": [
+    ["north_gate","north_junction",360,0.18,0.62,0.35],
+    ["north_junction","panda",280,0.25,0.58,0.55],
+    ["north_junction","west_junction",430,0.20,0.72,0.30],
+    ["west_junction","native",390,0.12,0.82,0.28],
+    ["panda","native",360,0.10,0.75,0.48],
+    ["panda","central_junction",470,0.30,0.60,0.68],
+    ["native","central_junction",330,0.18,0.78,0.38],
+    ["native","rest",260,0.08,0.90,0.20],
+    ["rest","central_junction",330,0.16,0.88,0.30],
+    ["central_junction","primate",420,0.38,0.66,0.72],
+    ["central_junction","east_junction",390,0.30,0.52,0.58],
+    ["primate","east_junction",300,0.22,0.60,0.65],
+    ["east_junction","east_gate",260,0.12,0.48,0.40],
+    ["rest","food",220,0.05,0.84,0.25],
+    ["native","food",410,0.14,0.76,0.30],
+    ["food","south_junction",330,0.10,0.68,0.32],
+    ["central_junction","south_junction",470,0.32,0.54,0.48],
+    ["primate","africa",560,0.44,0.42,0.60],
+    ["africa","south_junction",440,0.26,0.50,0.48],
+    ["south_junction","south_gate",420,0.16,0.58,0.40]
+  ]
+}
